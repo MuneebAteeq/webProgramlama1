@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>W3Schools Online Web Tutorials</title>
+    <link rel="icon" href="https://www.w3schools.com/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="w3school.css">
+    <script type="text/javascript" src="w3school.js"></script>
+</head>
+<body style="position: relative; min-height: 100%; top: 0px;">
+<div class="container-fluid" style="padding-top:20px;" >
+    <div class="row">
+        <div class="col-7 col-lg-2 col-xl-3 justify-left">
+            <a class="logo" style="position:absolute;" href="#">w3schools<span class="dotcom">.com</span></a>
+        </div>
+        <div class="col-lg-7 d-none d-lg-block justify-right pr-0" >
+            <p id="up_bar">THE WORLD'S LARGEST WEB DEVELOPER SITE</p>
+        </div>
+        <div class="col-5 col-lg-3 col-xl-2" >
+            <div class="btn-group" style="float: right!important;" id="log">
+                <button type="button" class="log btn btn-success" style="font-weight:400;font-size:14px;padding:6px 14px!important;">LOG IN</button>
+                <button type="button" onclick="window.open('CV/CV.html');" formtarget="_blank" class="log btn btn-success .btn"style="font-weight:400;font-size:14px;padding:6px 14px!important;">MY CV</button>
+            </div>
+        </div>
+    </div>
+</div>
+<nav class="navbar navbar-expand-sm navbar-dark py-0 justify-content-center mynav">
+    <ul class="col-2 col-md-10 navbar-nav">
+        <li class="nav-item top_nav-item d-block d-md-none paddingtb16">
+            <i class="fas fa-bars fa-lg"></i>
+        </li>
+        <li class="nav-item top_nav-item d-none d-md-block" id="TUTORIALS" style="cursor:pointer;padding:16px!important;">
+            <a class="nav-link active" style="padding:0px!important;" href="#">TUTORIALS <i class="fas fa-caret-down"></i> </a>
+        </li>
+        <li class="nav-item top_nav-item d-none d-md-block" id="REFERENCES" style="cursor:pointer;padding:16px!important;">
+            <a class="nav-link active" style="padding:0px!important;" href="#">REFERENCES <i class="fas fa-caret-down"></i> </a>
+        </li>
+        <li class="nav-item top_nav-item d-none d-md-block" id="EXAMPLES" style="cursor:pointer;padding:16px!important;">
+            <a class="nav-link active" style="padding:0px!important;" href="#">EXAMPLES <i class="fas fa-caret-down"></i> </a>
+        </li>
+        <li class="nav-item top_nav-item d-none d-lg-block" id="EXERCISES" style="cursor:pointer;padding:16px!important;">
+            <a class="nav-link active" style="padding:0px!important;" href="#">EXERCISES <i class="fas fa-caret-down"></i> </a>
+        </li>
+        <li class="nav-item top_nav-item d-none d-xl-block" style="cursor:pointer;padding:16px!important;">
+            <a class="nav-link active"style="padding:0px!important;"  href="#">CERTIFICATES</a>
+        </li>
+    </ul>
+    <ul class="col-10 col-md-2 navbar-nav flex-row-reverse p-0 m-0">
+        <li class="nav-item top_nav-item paddingtb16" >
+            <i class="fas fa-search fa-lg" style="font-size: 20px;"></i>
+        </li>
+        <li class="nav-item top_nav-item paddingtb16" style="color:white;cursor: pointer;padding-top:16px;padding-bottom:16px;">
+            <i class="fas fas fa-globe-americas fa-lg" style="font-size: 20px;"></i>
+        </li>
+        <li class="nav-item top_nav-item d-none d-sm-block paddingtb16" style="color:white;cursor: pointer;padding-top:16px;padding-bottom:16px;">
+            <i class="fas fa-toggle-on fa-lg" style="font-size: 20px;"></i>
+        </li>
+        <li class="nav-item top_nav-item paddingtb16 socialMedia" style="color:white;cursor: pointer;padding-top:16px;padding-bottom:16px;">
+            <i class="fab fa-linkedin" style="font-size: 20px;"></i>
+        </li>
+        <li class="nav-item top_nav-item paddingtb16 socialMedia" style="color:white;cursor: pointer;padding-top:16px;padding-bottom:16px;">
+            <i class="fab fa-instagram" style="font-size: 20px;"></i>
+        </li>
+        <li class="nav-item top_nav-item paddingtb16 socialMedia" style="color:white;cursor: pointer;padding-top:16px;padding-bottom:16px;">
+            <i class="fab fa-facebook-square" style="font-size: 20px;"></i>
+        </li>
+    </ul>
+</nav>
+<div id="mybar" class="full-height mySideBar d-none d-md-block" style="padding-right:0px; padding-left:0px;">
+        <div >
+            <h4 class="cartTitle">HTML and CSS</h4>
+            <a class="nav-link cartElement" href="#">Learn HTML</a>
+            <a class="nav-link cartElement" href="#">Learn CSS</a>
+            <a class="nav-link cartElement" href="#">Learn Bootstrap</a>
+            <a class="nav-link cartElement" href="#">Learn W3.CSS</a>
+            <a class="nav-link cartElement" href="#">Learn Colors</a>
+            <a class="nav-link cartElement" href="#">Learn Icons</a>
+            <a class="nav-link cartElement" href="#">Learn Graphics</a>
+            <a class="nav-link cartElement" href="#">Learn How To</a>
+            <a class="nav-link cartElement" href="#">Learn Sass</a>
+            <h4 class="cartTitle">JavaScript</h4>
+            <a class="nav-link cartElement" href="#">Learn JavaScript</a>
+            <a class="nav-link cartElement" href="#">Learn jQuery</a>
+            <a class="nav-link cartElement" href="#">Learn React</a>
+            <a class="nav-link cartElement" href="#">Learn AngularJS</a>
+            <a class="nav-link cartElement" href="#">Learn JSON</a>
+            <a class="nav-link cartElement" href="#">Learn AJAX</a>
+            <a class="nav-link cartElement" href="#">Learn AppML</a>
+            <a class="nav-link cartElement" href="#">Learn W3.JS</a>
+            <h4 class="cartTitle">Server Side</h4>
+            <a class="nav-link cartElement" href="#">Learn SQL</a>
+            <a class="nav-link cartElement" href="#">Learn PHP</a>
+            <a class="nav-link cartElement" href="#">Learn ASP</a>
+            <a class="nav-link cartElement" href="#">Learn Node.js</a>
+            <a class="nav-link cartElement" href="#">Learn Raspberry Pi</a>
+            <h4 class="cartTitle">Programming</h4>
+            <a class="nav-link cartElement" href="#">Learn Python</a>
+            <a class="nav-link cartElement" href="#">Learn Java</a>
+            <a class="nav-link cartElement" href="#">Learn C++</a>
+            <a class="nav-link cartElement" href="#">Learn C#</a>
+            <a class="nav-link cartElement" href="#">Learn Machine Learning</a>
+            <a class="nav-link cartElement" href="#">Learn Data Science</a>
+            <h4 class="cartTitle">Web Building</h4>
+            <a class="nav-link cartElement" href="#">Web Templates</a>
+            <a class="nav-link cartElement" href="#">Web Statistics</a>
+            <a class="nav-link cartElement" href="#">Web Certificates</a>
+            <a class="nav-link cartElement" href="#">Web Editor</a>
+            <a class="nav-link cartElement" href="#">Web Development</a>
+            <a class="nav-link cartElement" href="#">Test Your Typing Speed</a>
+            <h4 class="cartTitle">XML Tutorials</h4>
+            <a class="nav-link cartElement" href="#">Learn XML</a>
+            <a class="nav-link cartElement" href="#">Learn XML AJAX</a>
+            <a class="nav-link cartElement" href="#">Learn XML DOM</a>
+            <a class="nav-link cartElement" href="#">Learn XML DTD</a>
+            <a class="nav-link cartElement" href="#">Learn XML Schema</a>
+            <a class="nav-link cartElement" href="#">Learn XSLT</a>
+            <a class="nav-link cartElement" href="#">Learn XPath</a>
+            <a class="nav-link cartElement" href="#">Learn XQuery</a>
+            <h4 class="cartTitle">References</h4>
+            <a class="nav-link cartElement" href="#">HTML Reference</a>
+            <a class="nav-link cartElement" href="#">CSS Reference</a>
+            <a class="nav-link cartElement" href="#">JS Reference</a>
+            <a class="nav-link cartElement" href="#">SQL Reference</a>
+            <a class="nav-link cartElement" href="#">PHP Reference</a>
+            <a class="nav-link cartElement" href="#">JQuery Reference</a>
+            <a class="nav-link cartElement" href="#">Python Reference</a>
+            <a class="nav-link cartElement" href="#">Bootstrap 3 Reference</a>
+            <a class="nav-link cartElement" href="#">Bootstrap 4 Reference</a>
+            <a class="nav-link cartElement" href="#">W3.CSS Reference</a>
+            <a class="nav-link cartElement" href="#">Java Reference</a>
+            <a class="nav-link cartElement" href="#">Angular Reference</a>
+            <a class="nav-link cartElement" href="#">Sass Reference</a>
+            <a class="nav-link cartElement" href="#">UTF-8 Reference</a>
+            <h4 class="cartTitle">Exercises</h4>
+            <a class="nav-link cartElement" href="#">HTML Exercises</a>
+            <a class="nav-link cartElement" href="#">CSS Exercises</a>
+            <a class="nav-link cartElement" href="#">JavaScript Exercises</a>
+            <a class="nav-link cartElement" href="#">SQL Exercises</a>
+            <a class="nav-link cartElement" href="#">PHP Exercises</a>
+            <a class="nav-link cartElement" href="#">Python Exercises</a>
+            <a class="nav-link cartElement" href="#">Java Reference</a>
+            <a class="nav-link cartElement" href="#">C++ Exercises</a>
+            <a class="nav-link cartElement" href="#">C# Exercises</a>
+            <a class="nav-link cartElement" href="#">Bootstrap Exercises</a>
+        </div>
+</div>
+
+<nav id="nav_tutorials" class="nav-on-click light-gray d-none d-md-block hide" style="padding-right: 8px!important;padding-left:8px!important;">
+    <span class="closeBtn">×</span><br>
+    <div class="row" style="padding: 0 8px;">
+        <div class="col-sm-6 col-lg-3">
+            <h3 class="cartTitle" style="font-size: 24px;">HTML and CSS</h3>
+            <a class="nav-link cartElement font16" href="#">Learn HTML</a>
+            <a class="nav-link cartElement font16" href="#">Learn CSS</a>
+            <a class="nav-link cartElement font16" href="#">Learn Bootstrap</a>
+            <a class="nav-link cartElement font16" href="#">Learn W3.CSS</a>
+            <a class="nav-link cartElement font16" href="#">Learn Colors</a>
+            <a class="nav-link cartElement font16" href="#">Learn Icons</a>
+            <a class="nav-link cartElement font16" href="#">Learn Graphics</a>
+            <a class="nav-link cartElement font16" href="#">Learn SVG</a>
+            <a class="nav-link cartElement font16" href="#">Learn Canvas</a>
+            <a class="nav-link cartElement font16" href="#">Learn How To</a>
+            <a class="nav-link cartElement font16" href="#">Learn Sass</a>
+            <div class="d-none d-sm-block d-lg-none">
+                <h3 class="cartTitle"style="font-size: 24px;">XML Tutorials</h3>
+                <a class="nav-link cartElement font16" href="#">Learn XML</a>
+                <a class="nav-link cartElement font16" href="#">Learn XML AJAX</a>
+                <a class="nav-link cartElement font16" href="#">Learn XML DOM</a>
+                <a class="nav-link cartElement font16" href="#">Learn XML DTD</a>
+                <a class="nav-link cartElement font16" href="#">Learn XML Schema</a>
+                <a class="nav-link cartElement font16" href="#">Learn XSLT</a>
+                <a class="nav-link cartElement font16" href="#">Learn XPath</a>
+                <a class="nav-link cartElement font16" href="#">Learn XQuery</a>
+            </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+            <h3 class="cartTitle"style="font-size: 24px;">JavaScript</h3>
+            <a class="nav-link cartElement font16" href="#">Learn JavaScript</a>
+            <a class="nav-link cartElement font16" href="#">Learn jQuery</a>
+            <a class="nav-link cartElement font16" href="#">Learn React</a>
+            <a class="nav-link cartElement font16" href="#">Learn AngularJS</a>
+            <a class="nav-link cartElement font16" href="#">Learn JSON</a>
+            <a class="nav-link cartElement font16" href="#">Learn AJAX</a>
+            <a class="nav-link cartElement font16" href="#">Learn AppML</a>
+            <a class="nav-link cartElement font16" href="#">Learn W3.JS</a>
+
+            <h3 class="cartTitle"style="font-size: 24px;">Programming</h3>
+            <a class="nav-link cartElement font16" href="#">Learn Python</a>
+            <a class="nav-link cartElement font16" href="#">Learn Java</a>
+            <a class="nav-link cartElement font16" href="#">Learn C++</a>
+            <a class="nav-link cartElement font16" href="#">Learn C#</a>
+            <a class="nav-link cartElement font16" href="#">Learn R</a>
+            <a class="nav-link cartElement font16" href="#">Learn Machine Learning</a>
+            <a class="nav-link cartElement font16" href="#">Learn Data Science</a>
+            <div class="d-block d-lg-none">
+                <h3 class="cartTitle"style="font-size: 24px;">Server Side</h3>
+                <a class="nav-link cartElement font16" href="#">Learn SQL</a>
+                <a class="nav-link cartElement font16" href="#">Learn PHP</a>
+                <a class="nav-link cartElement font16" href="#">Learn ASP</a>
+                <a class="nav-link cartElement font16" href="#">Learn Node.js</a>
+                <a class="nav-link cartElement font16" href="#">Learn Raspberry Pi</a>
+
+                <h3 class="cartTitle"style="font-size: 24px;">Web Building</h3>
+                <a class="nav-link cartElement font16" href="#">Web Templates</a>
+                <a class="nav-link cartElement font16" href="#">Web Statistics</a>
+                <a class="nav-link cartElement font16" href="#">Web Certificates</a>
+                <a class="nav-link cartElement font16" href="#">Web Editor</a>
+                <a class="nav-link cartElement font16" href="#">Web Development</a>
+                <a class="nav-link cartElement font16" href="#">Test Your Typing Speed</a>
+            </div>
+        </div>
+        <div class="col-lg-3 d-none d-lg-block">
+            <h3 class="cartTitle"style="font-size: 24px;">Server Side</h3>
+            <a class="nav-link cartElement font16" href="#">Learn SQL</a>
+            <a class="nav-link cartElement font16" href="#">Learn PHP</a>
+            <a class="nav-link cartElement font16" href="#">Learn ASP</a>
+            <a class="nav-link cartElement font16" href="#">Learn Node.js</a>
+            <a class="nav-link cartElement font16" href="#">Learn Raspberry Pi</a>
+
+            <h3 class="cartTitle"style="font-size: 24px;">Web Building</h3>
+            <a class="nav-link cartElement font16" href="#">Web Templates</a>
+            <a class="nav-link cartElement font16" href="#">Web Statistics</a>
+            <a class="nav-link cartElement font16" href="#">Web Certificates</a>
+            <a class="nav-link cartElement font16" href="#">Web Editor</a>
+            <a class="nav-link cartElement font16" href="#">Web Development</a>
+            <a class="nav-link cartElement font16" href="#">Test Your Typing Speed</a>
+        </div>
+        <div class="col d-none d-lg-block col-lg-3">
+            <h3 class="cartTitle"style="font-size: 24px;">XML Tutorials</h3>
+            <a class="nav-link cartElement font16" href="#">Learn XML</a>
+            <a class="nav-link cartElement font16" href="#">Learn XML AJAX</a>
+            <a class="nav-link cartElement font16" href="#">Learn XML DOM</a>
+            <a class="nav-link cartElement font16" href="#">Learn XML DTD</a>
+            <a class="nav-link cartElement font16" href="#">Learn XML Schema</a>
+            <a class="nav-link cartElement font16" href="#">Learn XSLT</a>
+            <a class="nav-link cartElement font16" href="#">Learn XPath</a>
+            <a class="nav-link cartElement font16" href="#">Learn XQuery</a>
+        </div>
+    </div>
+    <br class="hidesm">
+</nav>
+<nav id="nav_references" class="nav-on-click light-gray d-none d-md-block hide" style="padding-right: 8px!important;padding-left:8px!important;">
+    <span class="closeBtn">×</span><br>
+    <div class="row" style="padding: 0 8px;">
+        <div class="col-sm-6 col-lg-3">
+            <h3 class="cartTitle" style="font-size: 24px;">HTML</h3>
+            <a class="nav-link cartElement font16" href="#">HTML Tag Reference</a>
+            <a class="nav-link cartElement font16" href="#">HTML Browser Support</a>
+            <a class="nav-link cartElement font16" href="#">HTML Event Reference</a>
+            <a class="nav-link cartElement font16" href="#">HTML Color Reference</a>
+            <a class="nav-link cartElement font16" href="#">HTML Attribute Reference</a>
+            <a class="nav-link cartElement font16" href="#">HTML Canvas Reference</a>
+            <a class="nav-link cartElement font16" href="#">HTML SVG Reference</a>
+            <a class="nav-link cartElement font16" href="#">Google Maps Reference</a>
+            <h3 class="cartTitle" style="font-size: 24px;">CSS</h3>
+            <a class="nav-link cartElement font16" href="#">CSS Reference</a>
+            <a class="nav-link cartElement font16" href="#">CSS Browser Support</a>
+            <a class="nav-link cartElement font16" href="#">CSS Selector Reference</a>
+            <a class="nav-link cartElement font16" href="#">Bootstrap 3 Reference</a>
+            <a class="nav-link cartElement font16" href="#">Bootstrap 4 Reference</a>
+            <a class="nav-link cartElement font16" href="#">W3.CSS Reference</a>
+            <a class="nav-link cartElement font16" href="#">Icon Reference</a>
+            <a class="nav-link cartElement font16" href="#">Sass Reference</a>
+
+        </div>
+        <div class="col-sm-6 col-lg-3">
+            <h3 class="cartTitle"style="font-size: 24px;">JavaScript</h3>
+            <a class="nav-link cartElement font16" href="#">JavaScript Reference</a>
+            <a class="nav-link cartElement font16" href="#">HTML DOM Reference</a>
+            <a class="nav-link cartElement font16" href="#">jQuery Reference</a>
+            <a class="nav-link cartElement font16" href="#">AngularJS Reference</a>
+            <a class="nav-link cartElement font16" href="#">AppML Reference</a>
+            <a class="nav-link cartElement font16" href="#">W3.JS Reference</a>
+            <h3 class="cartTitle"style="font-size: 24px;">Programming</h3>
+            <a class="nav-link cartElement font16" href="#">Python Reference</a>
+            <a class="nav-link cartElement font16" href="#">Java Reference</a>
+            <div class="d-block d-lg-none">
+                <h3 class="cartTitle"style="font-size: 24px;">Server Side</h3>
+                <a class="nav-link cartElement font16" href="#">SQL Reference</a>
+                <a class="nav-link cartElement font16" href="#">PHP Reference</a>
+                <a class="nav-link cartElement font16" href="#">ASP Reference</a>
+                <h3 class="cartTitle"style="font-size: 24px;">XML</h3>
+                <a class="nav-link cartElement font16" href="#">XML DOM Reference</a>
+                <a class="nav-link cartElement font16" href="#">XML Http Reference</a>
+                <a class="nav-link cartElement font16" href="#">XSLT Reference</a>
+                <a class="nav-link cartElement font16" href="#">XML Schema Reference</a>
+            </div>
+        </div>
+        <div class="col-lg-3 d-none d-lg-block">
+            <h3 class="cartTitle"style="font-size: 24px;">Server Side</h3>
+            <a class="nav-link cartElement font16" href="#">SQL Reference</a>
+            <a class="nav-link cartElement font16" href="#">PHP Reference</a>
+            <a class="nav-link cartElement font16" href="#">ASP Reference</a>
+            <h3 class="cartTitle"style="font-size: 24px;">XML</h3>
+            <a class="nav-link cartElement font16" href="#">XML DOM Reference</a>
+            <a class="nav-link cartElement font16" href="#">XML Http Reference</a>
+            <a class="nav-link cartElement font16" href="#">XSLT Reference</a>
+            <a class="nav-link cartElement font16" href="#">XML Schema Reference</a>
+        </div>
+        <div class="col-lg-3">
+            <h3 class="cartTitle"style="font-size: 24px;">Character Sets</h3>
+            <a class="nav-link cartElement font16" href="#">HTML Character Sets</a>
+            <a class="nav-link cartElement font16" href="#">HTML ASCII</a>
+            <a class="nav-link cartElement font16" href="#">HTML ANSI</a>
+            <a class="nav-link cartElement font16" href="#">HTML Windows-1252</a>
+            <a class="nav-link cartElement font16" href="#">HTML ISO-8859-1</a>
+            <a class="nav-link cartElement font16" href="#">HTML Symbols</a>
+            <a class="nav-link cartElement font16" href="#">HTML UTF-8</a>
+        </div>
+    </div>
+    <br class="hidesm">
+</nav>
+<nav id="nav_examples" class="nav-on-click light-gray d-none d-md-block hide" style="padding-right: 8px!important;padding-left:8px!important;">
+    <span class="closeBtn">×</span><br>
+    <div class="row" style="padding: 0 8px;">
+        <div class="col-sm-6 col-lg-3">
+            <h3 class="cartTitle" style="font-size: 24px;">HTML and CSS</h3>
+            <a class="nav-link cartElement font16" href="#">HTML Examples</a>
+            <a class="nav-link cartElement font16" href="#">CSS Examples</a>
+            <a class="nav-link cartElement font16" href="#">W3.CSS Examples</a>
+            <a class="nav-link cartElement font16" href="#">Bootstrap Examples</a>
+            <a class="nav-link cartElement font16" href="#">How To Examples</a>
+            <a class="nav-link cartElement font16" href="#">SVG Examples</a>
+            <a class="nav-link cartElement font16" href="#">Web Templates</a>
+            <div class="col-lg-3 d-none d-sm-block d-lg-none" style="padding:0px!important;">
+                <h3 class="cartTitle"style="font-size: 24px;">Quizzes</h3>
+                <a class="nav-link cartElement font16" href="#">HTML Quiz</a>
+                <a class="nav-link cartElement font16" href="#">CSS Quiz</a>
+                <a class="nav-link cartElement font16" href="#">JavaScript Quiz</a>
+                <a class="nav-link cartElement font16" href="#">SQL Quiz</a>
+                <a class="nav-link cartElement font16" href="#">PHP Quiz</a>
+                <a class="nav-link cartElement font16" href="#">Python Quiz</a>
+                <a class="nav-link cartElement font16" href="#">jQuery Quiz</a>
+                <a class="nav-link cartElement font16" href="#">Bootstrap Quiz</a>
+                <a class="nav-link cartElement font16" href="#">Java Quiz</a>
+                <a class="nav-link cartElement font16" href="#">C++ Quiz</a>
+                <a class="nav-link cartElement font16" href="#">C# Quiz</a>
+                <a class="nav-link cartElement font16" href="#">XML Quiz</a>
+            </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+            <h3 class="cartTitle"style="font-size: 24px;">JavaScript</h3>
+            <a class="nav-link cartElement font16" href="#">JavaScript Examples</a>
+            <a class="nav-link cartElement font16" href="#">HTML DOM Examples</a>
+            <a class="nav-link cartElement font16" href="#">jQuery Examples</a>
+            <a class="nav-link cartElement font16" href="#">AngularJS Examples</a>
+            <a class="nav-link cartElement font16" href="#">AJAX Examples</a>
+            <a class="nav-link cartElement font16" href="#">W3.JS Examples</a>
+            <h3 class="cartTitle"style="font-size: 24px;">Programming</h3>
+            <a class="nav-link cartElement font16" href="#">Python Examples</a>
+            <a class="nav-link cartElement font16" href="#">Java Examples</a>
+            <a class="nav-link cartElement font16" href="#">C++ Examples</a>
+            <a class="nav-link cartElement font16" href="#">C# Examples</a>
+            <div class="d-block d-lg-none">
+                <h3 class="cartTitle"style="font-size: 24px;">Server Side</h3>
+                <a class="nav-link cartElement font16" href="#">SQL Examples</a>
+                <a class="nav-link cartElement font16" href="#">PHP Examples</a>
+                <a class="nav-link cartElement font16" href="#">ASP Examples</a>
+                <h3 class="cartTitle"style="font-size: 24px;">XML</h3>
+                <a class="nav-link cartElement font16" href="#">XML Examples</a>
+                <a class="nav-link cartElement font16" href="#">XSLT Examples</a>
+                <a class="nav-link cartElement font16" href="#">XPath Examples</a>
+                <a class="nav-link cartElement font16" href="#">XML Schema Examples</a>
+                <a class="nav-link cartElement font16" href="#">AJAX Examples</a>
+                <a class="nav-link cartElement font16" href="#">SVG Examples</a>
+            </div>
+        </div>
+        <div class="col-lg-3 d-none d-lg-block">
+            <h3 class="cartTitle"style="font-size: 24px;">Server Side</h3>
+            <a class="nav-link cartElement font16" href="#">SQL Examples</a>
+            <a class="nav-link cartElement font16" href="#">PHP Examples</a>
+            <a class="nav-link cartElement font16" href="#">ASP Examples</a>
+            <h3 class="cartTitle"style="font-size: 24px;">XML</h3>
+            <a class="nav-link cartElement font16" href="#">XML Examples</a>
+            <a class="nav-link cartElement font16" href="#">XSLT Examples</a>
+            <a class="nav-link cartElement font16" href="#">XPath Examples</a>
+            <a class="nav-link cartElement font16" href="#">XML Schema Examples</a>
+            <a class="nav-link cartElement font16" href="#">AJAX Examples</a>
+            <a class="nav-link cartElement font16" href="#">SVG Examples</a>
+        </div>
+        <div class="col-lg-3 d-none d-lg-block">
+            <h3 class="cartTitle"style="font-size: 24px;">Quizzes</h3>
+            <a class="nav-link cartElement font16" href="#">HTML Quiz</a>
+            <a class="nav-link cartElement font16" href="#">CSS Quiz</a>
+            <a class="nav-link cartElement font16" href="#">JavaScript Quiz</a>
+            <a class="nav-link cartElement font16" href="#">SQL Quiz</a>
+            <a class="nav-link cartElement font16" href="#">PHP Quiz</a>
+            <a class="nav-link cartElement font16" href="#">Python Quiz</a>
+            <a class="nav-link cartElement font16" href="#">jQuery Quiz</a>
+            <a class="nav-link cartElement font16" href="#">Bootstrap Quiz</a>
+            <a class="nav-link cartElement font16" href="#">Java Quiz</a>
+            <a class="nav-link cartElement font16" href="#">C++ Quiz</a>
+            <a class="nav-link cartElement font16" href="#">C# Quiz</a>
+            <a class="nav-link cartElement font16" href="#">XML Quiz</a>
+        </div>
+    </div>
+    <br class="hidesm">
+</nav>
+<nav id="nav_exercises" class="nav-on-click light-gray d-none d-lg-block hide" style="padding-right: 8px!important;padding-left:8px!important;">
+    <span class="closeBtn">×</span>
+    <br>
+    <div class="row" style="padding: 0 8px;">
+        <div class="col-lg-4">
+            <h3 class="cartTitle" style="font-size: 24px;">Exercises</h3>
+            <a class="nav-link cartElement font16" href="#">HTML Exercises</a>
+            <a class="nav-link cartElement font16" href="#">CSS Exercises</a>
+            <a class="nav-link cartElement font16" href="#">JavaScript Exercises</a>
+            <a class="nav-link cartElement font16" href="#">SQL Exercises</a>
+            <a class="nav-link cartElement font16" href="#">PHP Exercises</a>
+            <a class="nav-link cartElement font16" href="#">Python Exercises</a>
+            <a class="nav-link cartElement font16" href="#">jQuery Exercises</a>
+            <a class="nav-link cartElement font16" href="#">Java Exercises</a>
+            <a class="nav-link cartElement font16" href="#">Bootstrap Exercises</a>
+            <a class="nav-link cartElement font16" href="#">C++ Exercises</a>
+            <a class="nav-link cartElement font16" href="#">C# Exercises</a>
+        </div>
+        <div class="col-lg-4">
+            <h3 class="cartTitle"style="font-size: 24px;">Quizzes</h3>
+            <a class="nav-link cartElement font16" href="#">HTML Quiz</a>
+            <a class="nav-link cartElement font16" href="#">CSS Quiz</a>
+            <a class="nav-link cartElement font16" href="#">JavaScript Quiz</a>
+            <a class="nav-link cartElement font16" href="#">SQL Quiz</a>
+            <a class="nav-link cartElement font16" href="#">PHP Quiz</a>
+            <a class="nav-link cartElement font16" href="#">Python Quiz</a>
+            <a class="nav-link cartElement font16" href="#">jQuery Quiz</a>
+            <a class="nav-link cartElement font16" href="#">Bootstrap Quiz</a>
+            <a class="nav-link cartElement font16" href="#">Java Quiz</a>
+            <a class="nav-link cartElement font16" href="#">C++ Quiz</a>
+            <a class="nav-link cartElement font16" href="#">C# Quiz</a>
+            <a class="nav-link cartElement font16" href="#">XML Quiz</a>
+        </div>
+        <div class="col-lg-4">
+            <h3 class="cartTitle"style="font-size: 24px;">Certificates</h3>
+            <a class="nav-link cartElement font16" href="#">HTML Certificate</a>
+            <a class="nav-link cartElement font16" href="#">CSS Certificate</a>
+            <a class="nav-link cartElement font16" href="#">JavaScript Certificate</a>
+            <a class="nav-link cartElement font16" href="#">SQL Certificate</a>
+            <a class="nav-link cartElement font16" href="#">PHP Certificate</a>
+            <a class="nav-link cartElement font16" href="#">Python Certificate</a>
+            <a class="nav-link cartElement font16" href="#">Bootstrap Certificate</a>
+            <a class="nav-link cartElement font16" href="#">jQuery Certificate</a>
+            <a class="nav-link cartElement font16" href="#">XML Certificate</a>
+        </div>
+    </div>
+    <br class="hidesm">
+</nav>
+
+<div class="container-fluid content">
+    <div class="row" style="margin-bottom:16px;">
+                <div class="col-lg-6 justify-content-center text-center content-box">
+                    <h1 class="content-topic">HTML</h1>
+                    <p class="content-text">The language for building web pages</p>
+                    <a href="#" class="content-gray-btn" style="text-decoration: none;">LEARN HTML</a>
+                    <a href="#" class="content-gray-btn" style="text-decoration: none;">HTML REFERENCE</a>
+                </div>
+                <div class="d-none d-sm-block col-lg-6 justify-content-center" style="padding:3%;">
+                    <div class="my-card">
+                        <div>
+                            <h3 class="card-topic">HTML Example:</h3>
+                            <div class="card-code" >
+                                <span style="color:brown" ><span style="color:mediumblue">&lt;</span>!DOCTYPE<span style="color:red"> html</span><span style="color:mediumblue">&gt;</span></span><br>
+                                <span style="color:brown"><span style="color:mediumblue" >&lt;</span>html<span style="color:mediumblue" >&gt;</span></span><br>
+                                <span style="color:brown"><span style="color:mediumblue" >&lt;</span>title<span style="color:mediumblue" >&gt;</span></span>HTML Tutorial<span style="color:brown"><span style="color:mediumblue">&lt;</span>/title<span style="color:mediumblue" >&gt;</span></span><br>
+                                <span style="color:brown"><span style="color:mediumblue">&lt;</span>body<span style="color:mediumblue" >&gt;</span></span><br><br>
+                                <span style="color:brown" ><span style="color:mediumblue">&lt;</span>h1<span style="color:mediumblue">&gt;</span></span>This is a heading<span style="color:brown"><span style="color:mediumblue" >&lt;</span>/h1<span style="color:mediumblue">&gt;</span></span><br>
+                                <span style="color:brown"><span style="color:mediumblue">&lt;</span>p<span style="color:mediumblue" >&gt;</span></span>This is a paragraph.<span style="color:brown" ><span style="color:mediumblue" >&lt;</span>/p<span style="color:mediumblue" >&gt;</span></span><br><br>
+                                <span style="color:brown"><span style="color:mediumblue">&lt;</span>/body<span style="color:mediumblue">&gt;</span></span><br>
+                                <span style="color:brown"><span style="color:mediumblue">&lt;</span>/html<span style="color:mediumblue" >&gt;</span></span>
+                            </div>
+                            <a href="#" class="content-green-btn" style="text-decoration: none;">Try it Yourself »</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    <div class="row" style="background-color: #f1f1f1!important;">
+        <div class="order-lg-2 col-lg-6 justify-content-center text-center content-box">
+            <h1 class="content-topic">CSS</h1>
+            <p class="content-text">The language for styling web pages</p>
+            <a href="#" class="content-gray-btn" style="text-decoration: none;">LEARN CSS</a>
+            <a href="#" class="content-gray-btn" style="text-decoration: none;">CSS REFERENCE</a>
+        </div>
+        <div class="d-none d-sm-block order-lg-1 col-lg-6 justify-content-center" style="padding:3%;">
+                    <h3 class="card-topic">CSS Example:</h3>
+                    <div class="card-code" style="box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);">
+                            <span style="color:brown" >body<span style="color:black">{</span>
+                                <span style="color:red"><br>&nbsp; background-color<span style="color:mediumblue"><span style="color:black" >:</span> lightblue<span style="color:black">;</span></span><br></span>
+                                <span style="color:black" >}</span><br><br>
+                                h1 <span style="color:black">{</span>
+                                <span style="color:red"><br>&nbsp; color<span style="color:mediumblue"><span style="color:black">:</span> white<span style="color:black">;</span></span><br>&nbsp;
+                                    text-align<span style="color:mediumblue"><span style="color:black" >:</span> center<span style="color:black">;</span></span><br></span><span style="color:black">}</span><br><br>
+                                p <span style="color:black">{</span><span style="color:red"><br>&nbsp; font-family<span style="color:mediumblue"><span style="color:black">:</span> verdana<span style="color:black" >;</span></span><br>&nbsp;
+                                    font-size<span style="color:mediumblue"><span style="color:black">:</span> 20px<span style="color:black">;</span></span><br></span><span style="color:black">}</span>
+                            </span>
+                    </div>
+                    <a href="#" class="content-green-btn" style="text-decoration: none;">Try it Yourself »</a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-6 justify-content-center text-center content-box">
+            <h1 class="content-topic">JavaScript</h1>
+            <p class="content-text">The language for programming web pages</p>
+            <a href="#" class="content-gray-btn" style="text-decoration: none;">LEARN JAVASCRIPT</a>
+            <a href="#" class="content-gray-btn" style="text-decoration: none;">JAVASCRIPT REFERENCE</a>
+        </div>
+        <div class="d-none d-sm-block col-lg-6 justify-content-center" style="padding:3%;">
+            <div class="my-card">
+                <div>
+                    <h3 class="card-topic">JavaScript Example:</h3>
+                    <div class="card-code" >
+                        <span style="color:brown" ><span style="color:mediumblue">&lt;</span>button<span style="color:red"> onclick<span style="color:mediumblue">="myFunction()"</span></span><span style="color:mediumblue">&gt;</span></span>Click Me!<span style="color:brown"><span style="color:mediumblue">&lt;</span>/button<span style="color:mediumblue" >&gt;</span></span><br><br>
+                        <span style="color:brown"><span style="color:mediumblue">&lt;</span>script<span style="color:mediumblue">&gt;</span></span><span style="color:black"><br>
+                        <span style="color:mediumblue">function</span> myFunction() {<br><span style="color:red"></span>&nbsp;
+                        <span style="color:mediumblue">var</span> x = document.<span style="color:black">getElementById</span>(<span style="color:brown">"demo"</span>);<br><span style="color:red"></span>&nbsp;
+                        x.<span style="color:black">style</span>.<span style="color:black">fontSize</span> = <span style="color:brown">"25px"</span>; <br><span style="color:red"></span>&nbsp;
+                        x.<span style="color:black">style</span>.<span style="color:black">color</span> = <span style="color:brown">"red"</span>; <br>}<br></span>
+                        <span style="color:brown"><span style="color:mediumblue">&lt;</span>/script<span style="color:mediumblue">&gt;</span></span>
+                    </div>
+                    <a href="#" class="content-green-btn" style="text-decoration: none;">Try it Yourself »</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" style="background-color: #f1f1f1!important;">
+        <div class="order-lg-2 col-lg-6 justify-content-center text-center content-box">
+            <h1 class="content-topic">SQL</h1>
+            <p class="content-text">A language for accessing databases</p>
+            <a href="#" class="content-gray-btn" style="text-decoration: none;">LEARN SQL</a>
+            <a href="#" class="content-gray-btn" style="text-decoration: none;">SQL REFERENCE</a>
+        </div>
+        <div class="d-none d-sm-block order-lg-1 col-lg-6 justify-content-center" style="padding:3%;">
+            <h3 class="card-topic">SQL Example:</h3>
+            <div id="sql" class="card-code" style="box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);">
+                            <span style="color:black">
+                                <span style="color:mediumblue">SELECT</span> * <span style="color:mediumblue" >FROM</span> Customers<br>
+                                <span style="color:mediumblue">WHERE</span> Country=<span style="color:brown">'Mexico'</span>;<span style="color:"></span>
+                            </span>
+            </div>
+            <a href="#" class="content-green-btn" style="text-decoration: none;">Try it Yourself »</a>
+        </div>
+    </div>
+    <div style="background-color: #616161!important; padding:32px 0px; margin:0px -15px;">
+        <div class="row" style="margin:0px!important;">
+            <div class="col-lg-6 justify-content-center text-center" style="padding: 2% 3%;">
+                <div class="programming-card">
+                    <h2 class="programming-topic">Python</h2>
+                    <div style="height:70px;">
+                        <h4 class="programming-text">A programming language</h4>
+                    </div>
+                    <a href="#" class="content-gray-btn" style="text-decoration: none;">LEARN PYTHON</a>
+                </div>
+            </div>
+            <div class="col-lg-6 justify-content-center text-center" style="padding: 2% 3%;">
+                <div class="programming-card">
+                    <h2 class="programming-topic">PHP</h2>
+                    <div style="height:70px;">
+                        <h4 class="programming-text">A web server programming language</h4>
+                    </div>
+                    <a href="#" class="content-gray-btn" style="text-decoration: none;">LEARN PHP</a>
+                </div>
+            </div>
+        </div>
+        <div class="row " style="margin:0px!important;">
+            <div class="col-lg-6 justify-content-center text-center" style="padding: 2% 3%;">
+                <div class=" programming-card">
+                    <h2 class="programming-topic">jQuery</h2>
+                    <div style="height:70px;">
+                        <h4 class="programming-text">A JavaScript library for developing web pages</h4>
+                    </div>
+                    <a href="#" class="content-gray-btn" style="text-decoration: none;">LEARN JQUERY</a>
+                </div>
+            </div>
+            <div class="col-lg-6 justify-content-center text-center" style="padding: 2% 3%;">
+                    <div class=" programming-card">
+                        <h2 class="programming-topic">Java</h2>
+                        <div style="height:70px;">
+                            <h4 class="programming-text">A programming language</h4>
+                        </div>
+                        <a href="#" class="content-gray-btn" style="text-decoration: none;">LEARN JAVA</a>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" style="padding:40px 0px;">
+        <div class="col-lg-4 justify-content-center text-center content-box">
+            <h1 class="programming-topic">W3.CSS</h1>
+            <p class="programming-text">A modern CSS framework for faster and better responsive web pages</p>
+            <a href="#" class="content-gray-btn" style="text-decoration: none;">LEARN W3.CSS</a>
+        </div>
+        <div class="col-lg-4 justify-content-center text-center content-box" style="padding:3%;">
+            <h1 class="programming-topic">Color Picker</h1>
+            <img src="imgs/colorpicker.png" id="colorpicker" alt="Colorpicker">
+        </div>
+        <div class="col-lg-4 justify-content-center text-center content-box" style="padding:3%;">
+            <h1 class="programming-topic">Bootstrap</h1>
+            <p class="programming-text">A CSS framework for designing better web pages</p>
+            <a href="#" class="content-gray-btn" style="text-decoration: none;">LEARN BOOTSTRAP 3</a>
+            <a href="#" class="content-gray-btn" style="text-decoration: none;">LEARN BOOTSTRAP 4</a>
+        </div>
+    </div>
+    <div class=" text-center content-box" style="background-color: #616161!important; padding:48px 24px; margin:0px -15px; padding-bottom: 68px!important;">
+        <h1 class="programming-topic" style="color:white!important; margin:10px 0px!important;">Exercises</h1>
+        <p class="programming-text" style="color:white!important; margin:10px 0px!important;">Test yourself with exercises</p>
+        <div class="row margin-l-r-auto justify-content-center text-center" style="padding: 0 8px;max-width: 980px;">
+            <div class="col-sm-4 justify-content-center text-center" style="padding:0px 8px!important;">
+                <a href="#" class="content-green-btn programming-exc-btn">HTML Exercises</a>
+            </div>
+            <div class="col-sm-4 justify-content-center text-center" style="padding:0px 8px!important;">
+                <a href="#" class="content-green-btn programming-exc-btn">CSS Exercises</a>
+            </div>
+            <div class="d-block d-sm-none d-lg-block col-sm-4 justify-content-center text-center" style="padding:0px 8px!important;">
+                <a href="#" class="content-green-btn programming-exc-btn" >JavaScript Exercises</a>
+            </div>
+            <div class="d-none d-sm-block d-lg-none col-sm-4 justify-content-center text-center"  style="padding:0px 8px!important;">
+                <a href="#" class="content-green-btn programming-exc-btn">JS Exercises</a>
+            </div>
+            <div class="d-block d-sm-none d-lg-none col-sm-4 justify-content-center text-center" style="padding:0px 8px!important;">
+                <a href="#" class="content-green-btn programming-exc-btn">SQL Exercises</a>
+            </div>
+            <div class="d-block d-sm-none d-lg-none col-sm-4 justify-content-center text-center" style="padding:0px 8px!important;">
+                <a href="#" class="content-green-btn programming-exc-btn">Python Exercises</a>
+            </div>
+        </div>
+        <div class="row margin-l-r-auto justify-content-center text-center" style="padding: 0 8px;max-width: 980px;">
+            <div class="d-none d-sm-block col justify-content-center text-center" style="padding:0px 8px!important;">
+                <a href="#" class="content-green-btn programming-exc-btn">SQL</a>
+            </div>
+            <div class="d-none d-sm-block col justify-content-center text-center" style="padding:0px 8px!important;">
+                <a href="#" class="content-green-btn programming-exc-btn">Python</a>
+            </div>
+            <div class="d-none d-sm-block col justify-content-center text-center" style="padding:0px 8px!important;">
+                <a href="#" class="content-green-btn programming-exc-btn">PHP</a>
+            </div>
+            <div class="d-none d-sm-block col justify-content-center text-center" style="padding:0px 8px!important;">
+                <a href="#" class="content-green-btn programming-exc-btn">jQuery</a>
+            </div>
+            <div class="d-none d-sm-block col justify-content-center text-center" style="padding:0px 8px!important;">
+                <a href="#" class="content-green-btn programming-exc-btn">Java</a>
+            </div>
+            <div class="d-none d-lg-block col justify-content-center text-center" style="padding:0px 8px!important;">
+                <a href="#" class="content-green-btn programming-exc-btn">C++</a>
+            </div>
+            <div class="d-none d-lg-block col justify-content-center text-center" style="padding:0px 8px!important;">
+                <a href="#" class="content-green-btn programming-exc-btn">C#</a>
+            </div>
+        </div>
+    </div>
+    <div class=" text-center content-box" style="background-color: #f1f1f1!important;padding:32px 24px!important;margin:0px -15px!important;">
+        <h2 class="programming-topic" style="margin:10px 0px!important;">Web Templates</h2>
+        <h4 class="programming-text" style="margin:10px 0px!important;">Browse our selection of <strong>free</strong> responsive HTML Templates</h4>
+        <div class="margin-l-r-auto" style="max-width: 980px;">
+            <img src="imgs/w3css_templates.jpg" alt="w3css templates" style="width: 100%; margin: 16px 0 20px 0;cursor: pointer;">
+        </div>
+        <div style="margin:15px 0px;s">
+            <a href="#" class="content-gray-btn" id="tamplatesbtn" style="text-decoration: none; padding:12px 24px;">BROWSE TEMPLATES</a>
+        </div>
+    </div>
+    <br>
+    <div class=" text-center content-box" style="padding:16px 24px 36px!important;margin:0px -15px!important;">
+        <h2 class="programming-topic" style="margin:10px 0px!important;">How To Section</h2>
+        <h4 class="programming-text" style="margin:10px 0px!important;">Code snippets for HTML, CSS and JavaScript</h4>
+        <div style="margin:32px -16px;">
+            <div class="row margin-l-r-auto" style="max-width: 980px;">
+                <div id="firstSlide" style="padding:0px 8px;width:50%;float: left;text-align: center!important;">
+                    <iframe src="frames/Sidebar.html" style="width:100%;border: 5px solid #ddd;height: 300px;"></iframe>
+                </div>
+                <div class="d-none d-lg-block"  style="padding:0px 8px;width:50%!important;float: left;text-align: center!important;">
+                    <iframe src="frames/AutoSidebar.html" style="width:100%;border: 5px solid #ddd;height: 300px;"></iframe>
+                </div>
+            </div>
+        </div>
+        <div style="margin:15px 0px;s">
+            <a href="#" class="content-gray-btn" id="learnhowto" style="text-decoration: none; padding:12px 24px;">LEARN HOW TO</a>
+        </div>
+    </div>
+    <div class="certoverlay-parent">
+            <img src="imgs/getcertified.jpg" style="max-width: 100%;margin: auto;display: block;">
+            <div class="certoverlay">
+                <br class="hide-small">
+                <h2>Web Certificates</h2>
+                <h3>Get Certified in HTML, CSS, JavaScript and more</h3>
+            </div>
+        <p>
+            <a href="#" id="getStartedbtn">Get Certified »</a>
+        </p>
+    </div>
+    <footer class="myFooter">
+        <div class="container-fluid align-middle" style="display:inline-block!important;padding:32px 16px;font-size:16px;">
+            <div class="row d-none d-lg-block left" style="margin-top:-9px;">
+                <a class="lightGrayBtn" href="#" style="margin-left:12px;margin-top:-9px;">WEB CERTIFICATES</a>
+                <a class="lightGrayBtn" href="#" style="margin-left:12px;margin-top:-9px;">QUIZZES</a>
+                <a class="lightGrayBtn" href="#" style="margin-left:12px;margin-top:-9px;">EXERCISES</a>
+            </div>
+            <div class="row d-block d-lg-none center" style="margin-bottom:16px;">
+                <a class="lightGrayBtn col-4" href="#" style="font-size:16px;">CERTIFICATES</a>
+                <a class="lightGrayBtn col-4" href="#" style="font-size:16px;">QUIZZES</a>
+                <a class="lightGrayBtn col-4" href="#" style="font-size:16px;">EXERCISES</a>
+            </div>
+            <nav class="right d-none d-lg-block wide">
+                <a href="#" class="hover-text-green" style="text-decoration:none;color:white;">FORUM</a> |
+                <a href="#" class="hover-text-green" style="text-decoration:none;color:white;">ABOUT</a>
+            </nav>
+            <nav class="text-center d-block d-lg-none wide" style="margin-top: 16px!important;">
+                <a href="#" class="hover-text-green" style="text-decoration:none;color:white;">FORUM</a> |
+                <a href="#" class="hover-text-green" style="text-decoration:none;color:white;">ABOUT</a>
+            </nav>
+        </div>
+        <p style="font-size:15px!important;font-family: Verdana,sans-serif; margin-top:16px;">
+            W3Schools is optimized for learning, testing, and training. Examples might be simplified to improve reading and basic understanding. Tutorials, references, and examples are constantly reviewed to avoid errors, but we cannot warrant full correctness of
+            all content. While using this site, you agree to have read and accepted our <a href="#" class="hover-text-green lastPlink">terms of use</a>, <a href="#" class="hover-text-green lastPlink">cookie and privacy policy</a>.<br>
+            <a href="#" class="hover-text-green lastPlink">Copyright 1999-2020</a> by Refsnes Data. All Rights Reserved.<br><br>
+        </p>
+        <a href="#"  title="Like W3Schools on Facebook" class="hover-text-light-grey">
+            <i class="far fa-thumbs-up fa-2x" style="color:white!important;"></i>
+        </a>
+        <div>
+            <a id="shopbtn" href="#"style="font-size:16px;margin-bottom:16px;margin-top:32px;padding:12px 28px;">W3SCHOOLS SHOP</a>
+        </div>
+    </footer>
+</div>
+</body>
+</html>

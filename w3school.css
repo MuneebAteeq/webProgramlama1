@@ -1,0 +1,383 @@
+.logo {
+font-family:fontawesome;
+text-decoration:none;
+line-height: 1;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+font-size:37px;
+letter-spacing:3px;
+color:#555555;
+display:block;
+position: absolute;
+background-color: transparent;
+box-sizing: inherit;
+}
+.logo:hover{
+color:#555555;
+text-decoration:none;
+}
+.dotcom {color:#4CAF50;}
+@media (max-width: 576px){
+  .logo,.dotcom{
+    font-size: 30px !important;
+  }
+}
+@font-face {
+font-family:'fontawesome';
+src:url('fonts/fontawesome.eot') format('embedded-opentype'),
+url('fonts/fontawesome.woff') format('woff'),
+url('fonts/fontawesome.ttf') format('truetype'),
+url('fonts/fontawesome.svg') format('svg');
+font-style:normal;
+}
+#up_bar{
+line-height: 50px;
+float: right!important;
+letter-spacing: 4px;
+box-sizing: inherit;
+margin-bottom:0;
+}
+#up_bar,.log,.navbar{font-family: 'Segoe UI',Arial,sans-serif;}
+.log{
+background-color: #4CAF50!important;
+display: inline;
+font-size: 15px;
+line-height:1.5;
+position:relative;
+top: 5px;
+float: right!important;
+margin-bottom:10px;
+}
+.log:hover {
+    background-color: #46a049!important;
+    color: #fff;
+}
+.mynav{
+background-color:#4CAF50;
+padding:0px 0px!important;
+max-height:57px;
+box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+}
+.top_nav-item{
+background-color:#4CAF50;
+padding:8px 16px;
+white-space: normal;
+text-align: center;
+letter-spacing: 4px;
+float: left;
+width: auto;
+vertical-align: middle;
+font-size:17px;
+}
+.paddingtb16{
+color:white;
+ cursor: pointer;
+ padding-top:16px;
+ padding-bottom:16px;
+}
+.light-gray{
+     color: #000!important;
+     background-color: #f1f1f1!important;
+ }
+@media screen and (min-width: 769px){#myAccordion, .hidesm {display: none !important; }}
+#nav_tutorials, #nav_references, #nav_examples, #nav_exercises{
+    padding-bottom: 40px;
+    position: absolute;
+    width: 100%;
+    z-index: 5 !important;
+    margin-top: 0;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+}
+#nav_tutorials h3{padding-left:8px!important;}
+#nav_references h3{padding-left:8px!important;}
+#nav_examples h3{padding-left:8px!important;}
+#nav_exercises h3{padding-left:6px!important;}
+.closeBtn{
+border: none;
+display: inline-block;
+padding: 8px 16px;
+vertical-align: middle;
+overflow: hidden;
+text-decoration: none!important;
+color: inherit;
+background-color: inherit;
+text-align: center;
+cursor: pointer;
+white-space: nowrap;
+font-size: 24px!important;
+position: absolute;
+right: 0;
+top: 0;
+font-family: Verdana,sans-serif;
+}
+.hide{display:none!important;}
+.font16{font-size: 16px!important;
+margin: 5px 5px 5px 0;
+font-family: Verdana,sans-serif;
+padding:2px 0px 2px 6px!important;}
+.mySideBar{
+height:100%;
+left:0;
+width: 230px;
+position: absolute !important;
+z-index: 3;
+overflow: hidden !important;
+font-family: Verdana,sans-serif;
+font-size: 15px;
+line-height: 1.5;
+box-sizing: inherit;
+margin-bottom: -155px;
+box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+}
+.cartTitle{
+margin-top: 16px!important;
+font-family: "Segoe UI",Arial,sans-serif;
+font-weight: 400;
+margin: 10px 0;
+font-size:20px;
+padding-left:16px;
+padding-right:16px;
+}
+.cartElement{
+padding:0px 16px;
+font-size: 16px;
+width: 100%;
+vertical-align: middle;
+color: black;
+}
+.cartElement:hover{
+background-color:#ccc;
+color:black;
+}
+.closeBtn:hover{
+background-color:#ccc!important;
+color:black;
+}
+.content{padding-left:245px;}
+@media (max-width: 768px){
+  .content{
+    padding-left:0px;
+  }
+}
+.content-box{padding:3%;}
+.content-topic{
+font-size:80px;
+color:#555555;
+margin: 2px 0 -20px 0 !important;
+font-family: "Segoe UI",Arial,sans-serif;
+   font-weight: 400;
+}
+.content-text{
+color: #3a3a3a!important;
+font-size: 24px!important;
+box-sizing: inherit;
+text-align: center!important;
+font-family: Verdana,sans-serif;
+margin-top: 1.2em;
+margin-bottom: 1.2em;
+}
+.content-gray-btn,.content-green-btn{
+  text-decoration: none;
+  color: white;
+  margin: 5px 5px 5px 0;
+  font-size: 16px;
+  padding: 8px 16px;
+  vertical-align: middle;
+  overflow: hidden;
+  text-align: center;
+  display: inline-block;
+  white-space: nowrap;
+  font-family: Verdana,sans-serif;
+}
+.content-gray-btn{ background-color:#616161!important;}
+.content-green-btn{background-color: #4CAF50 !important;}
+.content-gray-btn:hover{
+color: #000!important;
+background-color: #ccc!important;}
+.content-green-btn:hover{
+  color: white;
+  background-color: #4CAF50 !important;
+  box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 4px 20px 0 rgba(0,0,0,0.19);
+}
+.my-card{
+background-color: #f1f1f1!important;
+padding: 16px;
+box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+}
+.card-topic{
+font-family: "Segoe UI",Arial,sans-serif;
+font-weight: 400;
+margin: 10px 0;
+font-size: 24px;
+}
+.card-code{
+font-family: Consolas,"courier new";
+font-size: 15px;
+width: auto;
+background-color: #fff;
+padding: 8px 12px;
+border-left: 4px solid #4CAF50;
+margin-top: 16px!important;
+margin-bottom: 16px!important;
+}
+@media screen and (max-width: 768px){
+.content-topic{
+    font-size: 60px !important;
+}
+}
+#sql{height: 180px;}
+@media screen and (max-width: 992px){
+#sql{
+    height:100px;
+}
+#firstSlide{width:100%!important;}
+}
+.programming-card{
+color: #000!important;
+background-color: #fff!important;
+box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+padding: 8px 16px!important;
+padding-bottom: 24px!important;
+text-align: center!important;
+font-family: Verdana,sans-serif;
+font-size: 15px;
+text-align: center!important;
+}
+.programming-topic{
+font-size: 36px!important;
+font-family: "Segoe UI",Arial,sans-serif;
+    font-weight: 400;
+    margin: 10px 0;
+    color: #000!important;
+    text-align: center!important;
+}
+.programming-text{
+color: #3a3a3a!important;
+font-size: 20px;
+font-family: "Segoe UI",Arial,sans-serif;
+font-weight: 400;
+}
+#colorpicker{
+width:150px;
+height:128px;
+margin-top:16px;
+cursor: pointer;
+}
+#colorpicker:hover{opacity: 0.60;}
+.margin-l-r-auto{
+margin-left:auto;
+margin-right:auto;
+}
+.programming-exc-btn{
+text-decoration: none!important;
+ padding:16px!important;
+ width:100%;
+ margin:15px 0px;
+}
+@media (max-width: 576px) {#tamplatesbtn,#learnhowto{width:100%!important;}}
+.socialMedia{display:block;}
+@media (max-width: 1300px){.socialMedia{display:none;}}
+.certoverlay-parent{
+color:white;
+background-color:black;
+margin:0px -15px;
+position: relative;
+cursor:pointer;
+}
+.certoverlay{
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+}
+@media screen and (max-width: 545px){
+.certoverlay {
+    padding: 10px!important;
+    height: 100%!important;
+}
+.certoverlay h3 {font-size: 15px!important;}
+}
+
+@media (max-width: 600px){
+.hide-small { display: none!important;}
+}
+.certoverlay h2 {
+    margin: 10px 0 0 0;
+    font-size: 36px;
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-weight: 400;
+}
+.certoverlay h3 {
+    margin: 0 0 10px 0;
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+}
+.certoverlay-parent p{
+position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#getStartedbtn,#shopbtn{
+font-size:17px;
+text-decoration:none!important;
+padding: 12px 24px!important;
+background-color: #4CAF50!important;
+color: white;
+vertical-align: middle;
+overflow: hidden;
+text-align: center;
+cursor: pointer;
+display: inline-block;
+white-space: nowrap;
+font-family: Verdana,sans-serif;
+}
+#getStartedbtn:hover,#shopbtn:hover{
+  color: #000!important;
+  background-color: #fff!important;
+}
+.myFooter{
+padding:32px 16px!important;
+text-align: center!important;
+color:white!important;
+background-color:#616161!important;
+ margin:0px -15px;
+}
+.lightGrayBtn{
+color: #000!important;
+background-color: #f1f1f1!important;
+border: none;
+font-family: Verdana,sans-serif!important;
+padding: 8px 16px;
+vertical-align: middle;
+overflow: hidden;
+text-decoration: none!important;
+text-align: center;
+cursor: pointer;
+white-space: nowrap;
+}
+.lightGrayBtn:hover{
+color: #000!important;
+    background-color: #ccc!important;
+}
+hover-text-light-grey:hover{
+color: #f1f1f1!important;
+}
+.left{float: left!important;}
+.right{float: right!important;}
+.center{text-align: center!important;}
+
+.wide{
+font-family: "Segoe UI",Arial,sans-serif;
+letter-spacing: 4px;
+}
+.hover-text-green:hover {
+color: #4CAF50!important;
+}
+.lastPlink{
+color:white;
+text-decoration:underline;
+}
