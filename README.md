@@ -17,7 +17,7 @@ It contains 2 of HTML files, AutoSidebar.html and Sidebar.html, i used these fil
 It contains the pictures which i used in the main page of the website, and it's 3 pictures.
 
 # Used Languages:
-#### HTML
+#### 1.HTML
 #### 2.CSS
 #### 3.Jquery
 #### 4.Bootstrap
